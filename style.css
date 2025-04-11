@@ -1,6 +1,7 @@
 html, body {
-    height: 100%;
-    margin: 0;
+    height: 100%; /* Ensure both html and body cover the full height */
+    margin: 0; /* Remove any default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   #bouncing-image {
     user-drag: none;  /* Prevent dragging for browsers that support this property */
@@ -27,6 +28,7 @@ html, body {
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     height: 100vh; /* Ensure it takes the full viewport height */
+    min-height: 100vh; /* Ensure the body is at least the height of the viewport */
 }
 
 main {
