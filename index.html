@@ -125,5 +125,51 @@
   });
 </script>
 
+<style>
+@media (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: center; /* Center text */
+        width: 100%; /* Make the container full-width */
+        height: 100vh; /* Make it take the full viewport height */
+        margin: 0; /* Remove any margin */
+    }
+
+    .content {
+        width: 100%; /* Adjust content width for smaller screens */
+    }
+
+    .logo img {
+        max-width: 150px; /* Adjust logo size for mobile */
+        margin-bottom: 20px; /* Add spacing below the logo */
+        margin-top: 50px; /* Add spacing above the logo */
+    }
+
+    .socials {
+        margin: 20px 0; /* Add spacing around social icons */
+    }
+
+    .buttons {
+        width: 100%; /* Make buttons container full-width */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .buttons button {
+        max-width: 300px; /* Limit button width */
+        width: 90%; /* Allow buttons to resize */
+    }
+}
+
+/* Additional query for iPhone SE or smaller screens */
+@media (max-height: 700px) {
+    .logo img {
+        margin-top: 120px; /* Double the margin-top for smaller screens */
+    }
+}
+</style>
+
   </body>
 </html>
