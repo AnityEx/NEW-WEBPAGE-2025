@@ -23,9 +23,18 @@ html, body {
     background-attachment: fixed;
     background-repeat: no-repeat; /* Prevents repeating the image */
     display: flex;
-    justify-content: center;
-    /*align-items: center; DONT USE THIS IT MESSES THE PAGE UP*/
-    height: 100vh;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Ensure it takes the full viewport height */
+}
+
+main {
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the content */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center text inside the main container */
 }
 
 .main-container {
@@ -279,5 +288,20 @@ html, body {
         cursor: pointer;
         }
         
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .info-image {
+        margin-bottom: 20px; /* Add spacing between the image and text */
+    }
+
+    .info-text {
+        width: 100%; /* Ensure the text takes full width */
     }
 }
