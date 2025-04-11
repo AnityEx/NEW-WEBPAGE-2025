@@ -1,0 +1,18 @@
+-¿Pago?
++Los pagos se realizan por adelantado o según lo acordado en el contrato.
+-Tengo un Proyecto para ti que requiere Animaciones / un Generalista 3D / un Diseñador Gráfico / Hacer un Vtuber / Conocimiento sobre Blender
++¡Claro! Contáctame para discutir los detalles y cómo puedo ayudarte.
+-Quiero comisionarte para un personaje de Gmod
++Por supuesto, puedo ayudarte con eso. Escríbeme para más información.
+-Derechos de uso?
++Una vez recibas algun trabajo de mi procedencia ya sea para blender, vrchat, gmod, vseeface, etc. tienes derechos de usarlo como te plazca a ti, sin embargo sigo siendo el autor y tengo el derecho de hacer usos como publicar progresos, "Work In Progress" e imagenes relacionadas a cualquier trabajo con el objetivo de promocionarme, mostrar progreso de mi propio trabajo o habilidades y subirlo a sketchfab para ser visualizado. Es necesario destacar que esta política no se aplica a personalidades públicas representadas de manera realista (personas reales) cuya apariencia física no está basada en un diseño original. En esos casos, un modelo creado a partir de dichas personalidades me pertenece completamente y tengo la libertad de hacer uso de él según mi propio criterio.  
+Para trabajos que se necesite 
+confidencialidad o NDA estoy abierto a discutirlo y abordar los detalles necesarios asi que debe de ser mencionado explicitamente.
+-que programa usas?
++Blender 3D, Substance Painter, Photoshop, Krita y Unity 2019.4.31f1
+-como recibire mi personaje de vrchat
++A traves de tu cuenta debes de darme los permisos para poder acceder a ella y subirla desde mi pc, si prefieres tambien puedes verme dentro de vrchat y clonar tu personaje para guardar en favoritos, o lo mas dificil que seria darte los archivos de subida y que los subas tu desde tu unity con el vrchat sdk.
+-como recibire mi personaje de gmod
++A traves de mi workshop de steam
+-vienen con expresiones faciales de sfm?
++de momento aun no

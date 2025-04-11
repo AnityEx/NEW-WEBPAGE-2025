@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="main-container">
+        <div class="logo">
+            <!-- Replace with your logo image -->
+            <img src="images/fullicon.png" alt="Logo"  height="70">
+        </div>
+        <div class="content">
+            <div class="demo-button">
+              <img src="images/button22x.png" alt="reel" height="85" onclick="window.location.href='https://www.youtube.com/watch?v=HJEjwbA36wo'">
+            </div>
+            <div class="socials">
+                <!-- Replace with your social icons -->
+                <a href="#" class="social-icon">
+                    <img src="images/gum.png" alt="G"  height="63" onclick="window.location.href='https://anityex.gumroad.com/';">
+                  </a>
+                  <a href="#" class="social-icon">
+                    <img src="images/yt.png" alt="YT"  height="63" onclick="window.location.href='https://www.youtube.com/@anityex';">
+                  </a>
+                  <a href="#" class="social-icon">
+                    <img src="images/skfb.png" alt="3D"  height="63" onclick="window.location.href='https://sketchfab.com/anityex';">
+                  </a>
+                  <a href="#" class="social-icon">
+                    <img src="images/insta.png" alt="IG"  height="63" onclick="window.location.href='https://www.instagram.com/anity.ex/';">
+                  </a>
+                  <a href="#" class="social-icon">
+                    <img src="images/fiv.png" alt="FB" height="63" onclick="window.location.href='https://www.fiverr.com/anityex';">
+                  </a>
+                  
+            </div>
+            <div class="description">
+                <p>Diseñador Gráfico y Artista 3D</p>
+            </div>
+            <hr class="separator">
+            
+            <div class="buttons">
+                <button class="portfolio-button" onclick="window.location.href='portfolio.html'">Portafolio</button>
+                <button class="info-button" onclick="window.location.href='info.html'">Info</button>
+                <button class="contact-button" onclick="window.location.href='contact.html'">Contacto</button>
+                <button class="blog-button" onclick="window.location.href='https://blog.anityex.com';">Blog</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('anityex', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Tip Me',
+        'floating-chat.donateButton.background-color': '#ffffff',
+        'floating-chat.donateButton.text-color': '#323842'
+      });
+    </script>
+
+<script class="faceicon">
+  window.addEventListener("DOMContentLoaded", () => {
+    // Create the image element
+    const image = document.createElement('img');
+    image.src = "images/faceicon.png";  // Replace with your image URL
+    image.id = "bouncing-image";
+    image.style.position = "fixed";
+    image.style.zIndex = "9999";
+    image.style.width = "50px";  // Adjust image size
+    image.style.height = "auto";  // Adjust image size
+    document.body.appendChild(image);
+
+    // Create the audio element
+    const audio = new Audio("sounds/arcade.mp3"); // Replace with your sound file path
+    audio.volume = 0.6;
+    // Add click event listener to play the sound
+    image.addEventListener("click", () => {
+      audio.currentTime = 0;  // Reset the sound to the beginning
+      audio.play();
+    });
+
+    // Set initial position and speed
+    let x = 100, y = 110;
+    let dx = 3, dy = 2;
+
+    function animate() {
+      const ww = window.innerWidth;
+      const wh = window.innerHeight;
+
+      // Update position
+      x += dx;
+      y += dy;
+
+      // Check for collisions with the viewport edges
+      if (x + image.offsetWidth >= ww || x <= 0) dx *= -1;
+      if (y + image.offsetHeight >= wh || y <= 0) dy *= -1;
+
+      // Apply new position to the image
+      image.style.left = x + "px";
+      image.style.top = y + "px";
+
+      // Repeat the animation
+      requestAnimationFrame(animate);
+    }
+
+    animate(); // Start the animation
+
+    // Add mouseover event to bounce the image in a random direction
+    image.addEventListener("mouseover", () => {
+      // Generate random directions for dx and dy
+      dx = (Math.random() * 4 + 2) * (Math.random() < 0.5 ? 1 : -1); // Random speed between 2 and 6
+      dy = (Math.random() * 4 + 2) * (Math.random() < 0.5 ? 1 : -1); // Random speed between 2 and 6
+    });
+  });
+</script>
+
+  </body>
+</html>

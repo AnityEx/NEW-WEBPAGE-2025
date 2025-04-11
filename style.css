@@ -1,0 +1,277 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('images/fondo2x.png');
+    background-size: cover; /* Makes sure the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#bouncing-image {
+    user-drag: none;  /* Prevent dragging for browsers that support this property */
+    -webkit-user-drag: none;  /* For Safari and other Webkit-based browsers */
+    transition: transform 0.3s ease, color 0.3s ease;
+
+  }
+  
+#bouncing-image:hover {
+    transform: scale(1.15); /* Grows the icon visually */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.main-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: none; /* Remove shadow */
+    margin: 0 auto; /* Center the container on the page */
+    gap: 0px; /* Add spacing between the logo and content */
+    background-color: #9050a300; /* Dark background for the main container */
+}
+
+.logo img {
+    max-width: 230px;
+    margin-left: 20px; /* Add spacing to the left */
+    margin-right: 20px; /* Add spacing to the right */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+.demo-button {
+    background-color: #ffffff00;
+    color: #fff;
+    border: none;
+    padding: 0px 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    
+    transition: transform 0.5s ease, color 0.3s ease; /* Smooth transition with delay */
+
+}
+
+.demo-button:hover {
+    background-color: #ffffff00;
+    transform: scale(1.05); /* Grows the icon visually */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.socials {
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #bde606;
+    text-decoration: none;
+    transition: transform 0.5s ease, color 0.3s ease; /* Smooth transition with delay */
+
+}
+
+.social-icon:hover {
+    color: #9a3c50;
+    transform: scale(1.15); /* Grows the icon visually */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.description {
+    font-size: 21px;
+    margin: 10px 0;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 700; /* Bold weight */
+
+}
+
+.separator {
+    border: 3px solid #ddd;
+    margin: 20px 0; /* Center the separator */
+    max-width: 4000px; /* Limit the width of the separator */
+    
+    align-self: flex-start; /* Useful if used in a flex container */
+}
+
+.buttons button {
+ 
+    color: #ffffff;
+
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.buttons button:hover {
+    transform: scale(1.03); /* Grows the icon visually */
+}
+
+/* Portfolio Button */
+.portfolio-button {
+    background-color: #d41d63;
+}
+.portfolio-button:hover {
+    background-color: #fd2566;
+}
+
+/* Info Button */
+.info-button {
+    background-color: #eea93a;
+}
+.info-button:hover {
+    background-color: #ffbe57;
+}
+
+
+/* Contact Button */
+.contact-button {
+    background-color: #52b1b3;
+}
+.contact-button:hover {
+    background-color: #5ceaec;
+}
+
+.blog-button {
+    background-color: #30318d;
+}
+.blog-button:hover {
+    background-color: #5154db;
+}
+
+.SOCIALS {
+    background-color: #287eff;
+    color: #fff;
+    border: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+
+.SOCIALS:hover {
+    background-color: #3ca1ff;
+}
+.SOCIALS2 {
+    background-color: #ee3089;
+    color: #fff;
+    border: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+.SOCIALS2:hover {
+    background-color: #ff6aab;
+}
+/* Add media query for mobile devices */
+@media (max-width: 768px) {
+    
+    .main-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .logo img {
+        margin: 0 0 20px 0; /* Add spacing below the image */
+        min-width: 100%; /* Prevent it from shrinking too small */
+        height: auto;          /* Keeps aspect ratio */
+            box-sizing: border-box; /* Ensure padding/margin doesn't affect layout */
+
+    }
+
+    .content {
+        text-align: center; /* Center the content text */
+    }
+
+    .demo-button {
+        width: 100%; /* Make buttons full-width for better usability */
+    }
+    .description {
+        font-size: 20px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .separator {
+        margin: 20px auto; /* Center the separator */        
+        align-self: flex-start; /* Useful if used in a flex container */
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Make buttons container full-width */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .buttons button {
+        width: 100%; /* Make each button span the full width */
+        padding: 15px; /* Add padding for better touch usability */
+        font-size: 18px; /* Adjust font size for readability */
+        margin: 0 0px;
+    }
+}

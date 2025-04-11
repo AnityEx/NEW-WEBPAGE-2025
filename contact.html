@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        /* Hamburger menu styles */
+        .hamburger-menu {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001; /* Ensure it is above the iframe */
+            background-color: rgba(46, 46, 46, 0.562);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .menu-links {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.658);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            z-index: 1001; /* Ensure it is above the iframe */
+        }
+
+        .menu-links a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        .menu-links a:hover {
+            text-decoration: underline;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 29px; /* Space between the columns */
+        
+        }
+
+        .image-item {
+            text-align: center;
+            flex: ; /* Make both columns take equal space */
+        }
+
+        .image-item img {
+            max-width: 100%; /* Ensure the image scales properly */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 300px; /* Limit the height of the images */
+        }
+
+        .image-item button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰ Menu</div>
+    <div class="menu-links" id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="info.html">Info</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://blog.anityex.com">Blog</a>
+    </div>
+
+    <main>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="images/Blueskyblue1.png" alt="Image 1" > >
+                <div>
+                    <button class="SOCIALS" onclick="window.location.href='https://bsky.app/profile/me.anityex.com'">Bluesky Messages</button>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="images/instagram.png" alt="Image 2">
+                <div>
+                    <button class="SOCIALS2" onclick="window.location.href='https://www.instagram.com/anity.ex/'">Instagram Messages</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu-links');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

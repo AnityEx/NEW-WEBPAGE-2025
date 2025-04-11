@@ -1,0 +1,38 @@
+/* Hamburger menu styles */
+.hamburger-menu {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001; /* Ensure it is above the iframe */
+    background-color: rgba(46, 46, 46, 0.562);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.menu-links {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.658);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1001; /* Ensure it is above the iframe */
+}
+
+.menu-links a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.menu-links a:hover {
+    text-decoration: underline;
+}
