@@ -2,60 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
   }
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-image: url('images/fondo2x.png');
-    background-size: cover; /* Makes sure the image covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed;
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-#bouncing-image {
+  #bouncing-image {
     user-drag: none;  /* Prevent dragging for browsers that support this property */
     -webkit-user-drag: none;  /* For Safari and other Webkit-based browsers */
     transition: transform 0.3s ease, color 0.3s ease;
@@ -66,11 +13,26 @@ footer {
     transform: scale(1.15); /* Grows the icon visually */
     transition: transform 0.3s ease, color 0.3s ease;
 }
+
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('images/fondo2x.png');
+    background-size: cover; /* Makes sure the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    display: flex;
+    justify-content: center;
+    /*align-items: center; DONT USE THIS IT MESSES THE PAGE UP*/
+    height: 100vh;
+}
+
 .main-container {
     display: flex;
     flex-direction: row; /* Align items in a row */
     align-items: center;
-    justify-content: center; /* Center content horizontally */
+    justify-content: flex-start; /* Center content horizontally */
     padding: 20px;
     border-radius: 30px;
     box-shadow: none; /* Remove shadow */
@@ -147,17 +109,25 @@ footer {
     align-self: flex-start; /* Useful if used in a flex container */
 }
 
-.buttons button {
- 
-    color: #ffffff;
+.buttons {
+    text-align: left;
+    padding: 0px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: auto center 0 0;
+    cursor: pointer;
+}
 
+.buttons button {
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 25px;
-    margin: 0 3px;
+    border-radius: 12px;
     cursor: pointer;
+    
 
 }
 
@@ -228,25 +198,49 @@ footer {
 .SOCIALS2:hover {
     background-color: #ff6aab;
 }
+
+/* Add CSS rules to define the heights of the images based on their classes */
+.logo-image {
+    height: 70px;
+}
+
+.demo-button-image {
+    height: 85px;
+}
+
+.social-icon-image {
+    height: 63px;
+}
+
 /* Add media query for mobile devices */
 @media (max-width: 768px) {
-    
+    .social-icon-image {
+        height: 35px;
+        scale: 1.3  ;
+    }
+    .demo-button-image {
+        height: 60px;
+    }
     .main-container {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
         text-align: center; /* Center text */
+        width: 100%; /* Make content full-width */
+
     }
 
     .logo img {
         margin: 0 0 20px 0; /* Add spacing below the image */
         min-width: 100%; /* Prevent it from shrinking too small */
         height: auto;          /* Keeps aspect ratio */
-            box-sizing: border-box; /* Ensure padding/margin doesn't affect layout */
+        box-sizing: border-box; /* Ensure padding/margin doesn't affect layout */
 
     }
 
     .content {
+        align-items: center;
         text-align: center; /* Center the content text */
+        width: 100%; /* Make content full-width */
     }
 
     .demo-button {
@@ -260,18 +254,30 @@ footer {
     .separator {
         margin: 20px auto; /* Center the separator */        
         align-self: flex-start; /* Useful if used in a flex container */
+        width: 300px; /* Make separator full-width */
     }
     .buttons {
         display: flex;
         flex-direction: column; /* Stack buttons vertically */
-        width: 100%; /* Make buttons container full-width */
+        width: 90%; /* Make buttons container full-width */
         gap: 10px; /* Add spacing between buttons */
+        justify-content: center; /* Center buttons horizontally */
+        align-items: center; /* Center buttons vertically */
+        margin: 20px auto; /* Add spacing and center the container */
     }
 
     .buttons button {
         width: 100%; /* Make each button span the full width */
+        max-width: 300px;;
         padding: 15px; /* Add padding for better touch usability */
         font-size: 18px; /* Adjust font size for readability */
-        margin: 0 0px;
+        margin: 0 6%;
+        text-align: center;       
+        padding: 15px 0px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        }
+        
     }
 }
