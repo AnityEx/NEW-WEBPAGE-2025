@@ -9,12 +9,11 @@
     <style>
 
         .info-container {
-        display: flex; /* Ensure it is a flex container if needed for its children */
-        justify-content: center;
-        flex-direction: row; /* Arrange items in a row */
-        max-width: 700px; /* Maximum container width */
-        padding: 20px;
-        margin: 0 auto; /* Center horizontally */
+            display: flex; /* Ensure it is a flex container if needed for its children */
+            justify-content: center;
+            flex-direction: row; /* Arrange items in a row */
+            max-width: 700px; /* Maximum container width */
+            margin: 0 auto; /* Center horizontally */
         }
 
         .info-image {
@@ -38,7 +37,7 @@
             display: inline-block;
             margin: 4px 4px;
             text-decoration: none;
-
+            width: 100%; /* Make buttons take full width */
         }
 
         
@@ -67,9 +66,9 @@
 <body>
     <main>
         <!-- Info Section -->
-        <div class="info-container">
+        <br><br><div class="info-container">
             <div class="info-image">
-                <img src="images/fullicon.png" alt="AnityEx Logo">
+                <img src="images/Anitylogonew.png" alt="AnityEx Logo">
             </div>
             <div class="info-text">
                 <h2>Sobre Mi</h2>
@@ -80,9 +79,9 @@
                     ¿Interesado en mi trabajo? Escríbeme. Estoy aquí para resolver cualquier duda o consulta en relación a cómo puedo contribuir y trabajar en tu proyecto.
                 </p>
                 <div class="info-buttons">
-                    <button class="SOCIALS" onclick="sendEmail()">Send an e-Mail</button>
+                    <button class="SOCIALS" onclick="sendEmail()">Ask me anything / Send an e-Mail</button>
                     <button class="SOCIALS" onclick="window.location.href='https://bsky.app/profile/me.anityex.com'">@me.anityex.com on Bluesky</button>
-                    <button class="SOCIALS2" onclick="window.location.href='https://instagram.com/anityex'">anity.ex on Instagram</button>
+                    <button class="SOCIALS2" onclick="window.location.href='https://instagram.com/anity.ex'">@anity.ex on Instagram</button>
                 </div>
             </div>
         </div>
@@ -178,14 +177,6 @@
             loadFaq();
         </script>
     </section>
-    <script>
-        function sendEmail() {
-          const user = "alansgumo";
-          const domain = "gmail.com";
-          const email = `${user}@${domain}`;
-          window.location.href = `mailto:${email}`;
-        }
-      </script>
     <script src="menu.js"></script>
 </body>
 </html>
