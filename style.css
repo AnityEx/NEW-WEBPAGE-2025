@@ -18,7 +18,7 @@ html, body {
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('images/fondo2x.png');
+    background-image: url('images/newback.png');
     background-size: cover; /* Makes sure the image covers the entire screen */
     background-position: center; /* Centers the image */
     background-attachment: fixed;
@@ -73,14 +73,14 @@ main {
     cursor: pointer;
     margin-bottom: 0px;
     
-    transition: transform 0.5s ease, color 0.3s ease; /* Smooth transition with delay */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition with delay */
 
 }
 
 .demo-button:hover {
     background-color: #ffffff00;
     transform: scale(1.05); /* Grows the icon visually */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: transform 0.1s ease, color 0.1s ease; /* Smooth transition */
 }
 
 .socials {
@@ -89,18 +89,18 @@ main {
 
 .social-icon {
     display: inline-block;
-    margin: 0 10px;
+    margin: 8px 12px;
     font-size: 24px;
     color: #bde606;
     text-decoration: none;
-    transition: transform 0.5s ease, color 0.3s ease; /* Smooth transition with delay */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition with delay */
 
 }
 
 .social-icon:hover {
     color: #9a3c50;
     transform: scale(1.15); /* Grows the icon visually */
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.1s ease, color 0.1s ease;
 }
 
 .description {
@@ -108,14 +108,14 @@ main {
     margin: 10px 0;
     text-align: left;
     color: #ffffff;
-    font-weight: 700; /* Bold weight */
+    font-weight: 600; /* Bold weight */
 
 }
 
 .separator {
-    border: 3px solid #ddd;
+    border: 3px solid #00CC99;
     margin: 20px 0; /* Center the separator */
-    max-width: 4000px; /* Limit the width of the separator */
+    max-width: 433px; /* Limit the width of the separator */
     
     align-self: flex-start; /* Useful if used in a flex container */
 }
@@ -138,17 +138,20 @@ main {
     font-weight: bold;
     border-radius: 12px;
     cursor: pointer;
-    
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition with delay */
+
 
 }
 
 .buttons button:hover {
     transform: scale(1.03); /* Grows the icon visually */
+    transition: transform 0.1s ease, color 0.1s ease;
+
 }
 
 /* Portfolio Button */
 .portfolio-button {
-    background-color: #d41d63;
+    background-color: #CA0566;
 }
 .portfolio-button:hover {
     background-color: #fd2566;
@@ -156,7 +159,7 @@ main {
 
 /* Info Button */
 .info-button {
-    background-color: #eea93a;
+    background-color: #FAA501;
 }
 .info-button:hover {
     background-color: #ffbe57;
@@ -165,14 +168,14 @@ main {
 
 /* Contact Button */
 .contact-button {
-    background-color: #52b1b3;
+    background-color: #33bbd6;
 }
 .contact-button:hover {
     background-color: #5ceaec;
 }
 
 .blog-button {
-    background-color: #30318d;
+    background-color: #282aad;
 }
 .blog-button:hover {
     background-color: #5154db;
@@ -306,4 +309,3 @@ main {
     .info-text {
         width: 100%; /* Ensure the text takes full width */
     }
-}
