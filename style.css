@@ -26,7 +26,6 @@ html, body {
     
 }
   body {
-    
     font-family: 'Open Sans', sans-serif;
     background-image: url('images/newback.png');
     background-size: cover; /* Makes sure the image covers the entire screen */
@@ -233,12 +232,16 @@ main {
 
 /* Add media query for mobile devices */
 @media (max-width: 768px) {
+    #body{
+        background-position: center; /* Centers the image */
+
+    }
     .social-icon-image {
-        height: 35px;
+        height: 35px; /* ICON SIZE*/
         scale: 1.5  ;
     }
     .demo-button-image {
-        height: 60px;
+        height: 57.5px;
     }
     .main-container {
         flex-direction: column; /* Stack items vertically */
