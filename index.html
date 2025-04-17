@@ -42,7 +42,7 @@
                   
             </div>
             <div class="description">
-                <p>Diseñador Gráfico y Artista 3D</p>
+Diseñador Gráfico y Artista 3D
             </div>
             <hr class="separator">
             
@@ -131,7 +131,6 @@
         display: flex;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
         text-align: center; /* Center text */
         width: 100%; /* Make the container full-width */
         height: 100vh; /* Make it take the full viewport height */
@@ -141,32 +140,22 @@
     .content {
         width: 100%; /* Adjust content width for smaller screens */
     }
-
-    .logo img {
+/*     THIS IS THE ACTUAL LOGO ON MOBILE THINGY SIOZE
+ */    .logo img {
         max-width: 150px; /* Adjust logo size for mobile */
-        margin-bottom: 20px; /* Add spacing below the logo */
-        margin-top: 50px; /* Add spacing above the logo */
+        margin-bottom: 15px; /* Add spacing below the logo */
+        margin-top: 25px; /* Add spacing above the logo */
     }
-
-    .socials {
-        margin: 20px 0; /* Add spacing around social icons */
-    }
-
     .buttons {
         width: 100%; /* Make buttons container full-width */
         gap: 10px; /* Add spacing between buttons */
+        margin-bottom: 70px;
+
     }
 
     .buttons button {
         max-width: 300px; /* Limit button width */
         width: 90%; /* Allow buttons to resize */
-    }
-}
-
-/* Additional query for iPhone SE or smaller screens */
-@media (max-height: 700px) {
-    .logo img {
-        margin-top: 120px; /* Double the margin-top for smaller screens */
     }
 }
 </style>

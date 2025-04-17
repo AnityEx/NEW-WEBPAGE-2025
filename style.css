@@ -10,6 +10,8 @@ html, body {
     
   }
   #bouncing-image {
+    cursor: pointer;
+
     user-drag: none;  /* Prevent dragging for browsers that support this property */
     -webkit-user-drag: none;  /* For Safari and other Webkit-based browsers */
     transition: transform 0.3s ease, color 0.3s ease;
@@ -48,19 +50,12 @@ main {
     flex-direction: row; /* Align items in a row */
     align-items: center;
     justify-content: flex-start; /* Center content horizontally */
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: none; /* Remove shadow */
-    margin: 0 auto; /* Center the container on the page */
-    gap: 0px; /* Add spacing between the logo and content */
-    background-color: #9050a300; /* Dark background for the main container */
 }
 
 .logo img {
     max-width: 230px;
     margin-left: 20px; /* Add spacing to the left */
     margin-right: 20px; /* Add spacing to the right */
-    height: auto; /* Keeps aspect ratio */
 }
 
 .content {
@@ -69,11 +64,6 @@ main {
 }
 
 .demo-button {
-    background-color: #ffffff00;
-    color: #fff;
-    border: none;
-    padding: 0px 0px;
-    border-radius: 0px;
     cursor: pointer;
     margin-bottom: 0px;
     
@@ -88,7 +78,7 @@ main {
 }
 
 .socials {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .social-icon {
@@ -118,7 +108,7 @@ main {
 
 .separator {
     border: 3px solid #00CC99;
-    margin: 20px 0; /* Center the separator */
+    margin: 10px 0; /* Center the separator */
     max-width: 433px; /* Limit the width of the separator */
     
     align-self: flex-start; /* Useful if used in a flex container */
@@ -130,8 +120,7 @@ main {
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
-    margin: auto center 0 0;
-    cursor: pointer;
+    margin: 0 0 0 0;
 }
 
 .buttons button {
@@ -218,16 +207,13 @@ main {
 }
 
 /* Add CSS rules to define the heights of the images based on their classes */
-.logo-image {
-    height: 70px;
-}
-
 .demo-button-image {
     height: 83px;
 }
 
 .social-icon-image {
-    height: 63px;
+    height: 61px;
+    scale: 1.15;
 }
 
 /* Add media query for mobile devices */
@@ -235,7 +221,7 @@ main {
     #body{
         background-position: center; /* Centers the image */
 
-    }
+    }  
     .social-icon-image {
         height: 35px; /* ICON SIZE*/
         scale: 1.5  ;
@@ -244,18 +230,11 @@ main {
         height: 57.5px;
     }
     .main-container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        text-align: center; /* Center text */
         width: 100%; /* Make content full-width */
-
     }
 
     .logo img {
-        margin: 0 0 20px 0; /* Add spacing below the image */
-        min-width: 100%; /* Prevent it from shrinking too small */
-        height: auto;          /* Keeps aspect ratio */
-        box-sizing: border-box; /* Ensure padding/margin doesn't affect layout */
+        margin: 0 0 0 0; /* Add spacing below the image */
 
     }
 
@@ -269,12 +248,12 @@ main {
         width: 100%; /* Make buttons full-width for better usability */
     }
     .description {
-        font-size: 20px;
-        margin: 10px 0;
+        font-size: 19px;
+        margin: 1px 0;
         text-align: center;
     }
     .separator {
-        margin: 20px auto; /* Center the separator */        
+        margin: 0px auto; /* Center the separator */        
         align-self: flex-start; /* Useful if used in a flex container */
         width: 300px; /* Make separator full-width */
     }
@@ -296,7 +275,7 @@ main {
         font-size: 18px; /* Adjust font size for readability */
         margin: 0 6%;
         text-align: center;       
-        padding: 15px 0px;
+        padding: 9px 0px;
         font-size: 20px;
         font-weight: bold;
         cursor: pointer;
