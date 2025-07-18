@@ -5,6 +5,27 @@
   justify-content: center;
   align-items: center;
 }
+.no-dots {
+  list-style-type: none;
+  padding-left: 0; /* Optional: remove left indentation */
+}
+
+.bob {
+  animation: bobbing 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes bobbing {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
 
 @media (max-width: 767px) {
   .image-row {
@@ -13,3 +34,5 @@
     grid-gap: 10px;
   }
 }
+
+

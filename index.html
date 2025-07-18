@@ -22,54 +22,6 @@
 <body>
   <div class="d-flex justify-content-center floatingnavigator p-3"> <!-- HERE WIDTH AND ALIGN CHANGES ON MENU -->
     <nav class="navbar navbar-expand-md navbar-light bg-mdark rounded-5 pe-2 ps-2 sm-maxwidth">
-      <div class="container-fluid d-flex justify-content-center">
-        <button class="navbar-toggler text-white   " type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="bi bi-list"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto col justify-content-center ">
-            <li class="nav-item active">
-              <a href="/" class="nav-link text-white text-center clickable">
-                <i class="bi bi-house-fill d-block mx-auto mb-1 fs-4 "></i>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="portfolio.html" class="nav-link text-white text-center clickable">
-                <i class="bi bi-grid-fill d-block mx-auto mb-1 fs-4"></i>
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="contact.html" class="nav-link text-white text-center clickable">
-                <i class="bi bi-chat-fill d-block mx-auto mb-1 fs-4"></i>
-                Contact
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class=" nav-link dropdown-toggle text-white text-center clickable" href="#" id="navbarDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
-                  class="bi bi-people-fill d-block mx-auto mb-1 fs-4"></i>
-                Socials
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a target="_blank" class="dropdown-item" href="https://www.youtube.com/@anityex">Youtube</a></li>
-                <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com/anity.ex/">Instagram</a>
-                </li>
-                <li><a target="_blank" class="dropdown-item" href="http://twitter.com/@anityex">Twitter</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="https://anityex.gumroad.com/" target="_blank" class="nav-link text-white text-center clickable">
-                <i class="bi bi-cart-fill d-block mx-auto mb-1 fs-4"></i>
-                Store
-              </a>
-            </li>
-          </ul>
-        </div>
     </nav>
   </div>
 
@@ -81,38 +33,58 @@
       <h1>Creating what you deserve</h1>
 
       <div>
-
         <div class="image-row">
-
           <div class="left-content">
             <!-- Left content here -->
-            <p>Left side</p>
+            <p>
+              <li class="nav-item active no-dots m-2">
+                <a href="/" class="nav-link text-white text-center clickable">
+                  <i class="bi bi-house-fill d-block mx-auto mb-1 fs-4 "></i>
+                  Home
+                </a>
+              </li>
+              <li class="no-dots m-2">
+                <a href="portfolio.html" class="nav-link text-white text-center clickable">
+                  <i class="bi bi-grid-fill d-block mx-auto mb-1 fs-4"></i>
+                  Portfolio
+                </a>
+              </li>
+              <li class="no-dots m-2">
+                <a href="contact.html" class="nav-link text-white text-center clickable">
+                  <i class="bi bi-chat-fill d-block mx-auto mb-1 fs-4"></i>
+                  Contact
+                </a>
+              </li>
+            </p>
           </div>
           <div>
-            <style>
-              .bob {
-                animation: bobbing 2s ease-in-out infinite;
-                display: inline-block;
-              }
-
-              @keyframes bobbing {
-
-                0%,
-                100% {
-                  transform: translateY(0);
-                }
-
-                50% {
-                  transform: translateY(-5px);
-                }
-              }
-            </style>
             <img src="./images/ch1_3.png" style="width: 100%; max-width: 500px;" class="bob main-image">
           </div>
 
           <div class="right-content">
             <!-- Right content here -->
-            <p>Right side</p>
+            <p>
+              <li class="no-dots m-2">
+                <a href="https://anityex.gumroad.com/" target="_blank"
+                  class="nav-link text-white text-center clickable">
+                  <i class="bi bi-cart-fill d-block mx-auto mb-1 fs-4"></i>
+                  Store
+                </a>
+              </li>
+              <li class="nav-item dropdown no-dots m-2">
+                <a class=" nav-link dropdown-toggle text-white text-center clickable" href="#" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+                    class="bi bi-people-fill d-block mx-auto mb-1 fs-4"></i>
+                  Socials
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a target="_blank" class="dropdown-item" href="https://www.youtube.com/@anityex">Youtube</a></li>
+                  <li><a target="_blank" class="dropdown-item" href="https://www.instagram.com/anity.ex/">Instagram</a>
+                  </li>
+                  <li><a target="_blank" class="dropdown-item" href="http://twitter.com/@anityex">Twitter</a></li>
+                </ul>
+              </li>
+            </p>
           </div>
         </div>
       </div>
