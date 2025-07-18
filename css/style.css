@@ -14,9 +14,15 @@ body {
 }
 
 .bg-mdark {
-    background-color: #0a0a11;
+    background-color: #ca05686e;
 }
-
+@media (max-width: 767.98px) {
+    .navbar.sm-maxwidth {
+    max-width: 88px !important;
+    min-width: 88px;
+    min-height:40px;
+    }
+}
 .tp-mlight {
     color: #ffffff;
 }
@@ -29,6 +35,15 @@ body {
     display: flex;
     justify-content: center;
 }
+.floatingnavigator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* Higher than Bootstrap's base elements */
+    pointer-events: auto;
+}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -239,7 +254,7 @@ main {
     scale: 1.15;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #body {
         background-position: center;
     }
