@@ -14,12 +14,11 @@ body {
 }
 
 .bg-mdark {
-    background-color: #ca05686e;
+    background-color: #a00e5780;
 }
-@media (max-width: 767.98px) {
-    .navbar.sm-maxwidth {
+@media (max-width: 767px) {
+    .sm-maxwidth {
     width: 100px !important;
-
     min-height:40px;
     }
 }
@@ -72,10 +71,11 @@ main {
     width: 100vw;
 }
 
-.main-container > * {
-  max-width: 440px
-}
-.logo img {
+/* .main-container > * {
+    max-width: 440px
+} */
+
+.logo-img {
     max-width: 230px;
     margin-left: 20px;
     margin-right: 20px;
@@ -83,12 +83,10 @@ main {
 
 .clickable {
     transition: transform 0.3s ease, color 0.3s ease;
-    color: #bde606;
     /* keep initial color if you want */
 }
 
 .clickable:hover {
-    color: #9a3c50;
     transform: scale(1.05);
     transition: transform 0.1s ease, color 0.1s ease;
 }
@@ -272,7 +270,7 @@ main {
         width: 100%;
     }
 
-    .logo img {
+    .logo-img {
         margin: 0 0 0 0;
     }
 

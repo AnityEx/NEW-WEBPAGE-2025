@@ -1,0 +1,15 @@
+.image-row {
+  display: grid;
+  grid-template-columns: auto 500px auto;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .image-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+  }
+}
