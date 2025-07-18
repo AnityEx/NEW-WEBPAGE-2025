@@ -18,8 +18,8 @@ body {
 }
 @media (max-width: 767.98px) {
     .navbar.sm-maxwidth {
-    max-width: 88px !important;
-    min-width: 88px;
+    width: 100px !important;
+
     min-height:40px;
     }
 }
