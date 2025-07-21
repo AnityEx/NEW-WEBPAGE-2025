@@ -1,17 +1,53 @@
 .image-row {
   display: grid;
-  grid-template-columns: auto 500px auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 20px;
   justify-content: center;
   align-items: center;
 }
-.no-dots {
-  list-style-type: none;
-  padding-left: 0; /* Optional: remove left indentation */
+
+.toplogo {
+  width: 100%;
+  max-width: 300px;
+  min-width: 100px;
 }
 
+.socket-image {
+  width: 100%;
+  max-width: 400px;
+  min-width: 150px;
+}
+
+.general-responsive {
+  width: 100%;
+  max-width: 400px;
+  min-width: 150px;
+}
+
+.general-responsive2 {
+  width: 100%;
+  max-width: 200px;
+  min-width: 75px;
+}
+
+.no-dots {
+  list-style-type: none;
+  padding-left: 0;
+  /* Optional: remove left indentation */
+}
+
+
+
+/* HERE DEBUGS */
+/* .dotlines,
+.dotlines * {
+  border: 1px dashed rgb(255, 0, 0);
+} */
+
 .bob {
-  animation: bobbing 2s ease-in-out infinite;
+  animation: bobbing 2s cubic-bezier(.7, 0, 0, .7) infinite;
+  animation-direction: normal;
+
   display: inline-block;
 }
 
@@ -19,20 +55,52 @@
 
   0%,
   100% {
-    transform: translateY(0);
+    transform: translatex(0);
   }
 
   50% {
-    transform: translateY(-5px);
+    transform: translatex(-20px);
   }
 }
+
+
+@keyframes sway {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+.sway {
+  animation: sway 0.2s ease-in-out infinite;
+  animation-direction: alternate;
+  display: inline-block;
+  transform-origin: center;
+}
+
 
 @media (max-width: 767px) {
   .image-row {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
   }
-}
 
 
+
+}    /* Only 2 columns now */
+
+
+  @media (max-width: 400px) {
+  .image-row {
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px;
+  }
+
+  /* Hide the middle item cleanly */
+  .socket-image {
+    display: none;
+  }
+} 
