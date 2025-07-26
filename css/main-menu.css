@@ -1,51 +1,160 @@
-.image-row {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
+.burger-menu {
+  position: absolute;
+  /* Ensures it stays centered */
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  max-width: 600px;
+  max-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.burger-menu::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-image: url('../menu_img/back.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 107%;
+  height: 100%;
+}
+
+
+.logotop {
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
+  width: 55%;
+}
+
+.logotop img {
+  height: auto;
+  width: 20%;
+  margin: 1%;
+}
+
+.top-btn {
+  position: relative;
+  width: 100%;
+  margin: 1%;
+      container-type: inline-size;
+}
+
+.bt-top {
+  width: 100%;
+  display: block;
+}
+
+.socket-overlay {
+  position: absolute;
+  top: 7%;
+  left: 58%;
+  width: 39%;
+  height: 110%;
+  z-index: 2;
+  /*   pointer-events: none; */
+}
+.face-overlay {
+  position: absolute;
+  top: 32%;
+  left: 77%;
+  width: 16%;
+  height: 33%;
+  z-index: 3;
+  /*   pointer-events: none; */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  pointer-events: none;
+
+  padding-left: 2%;
+  padding-right: 40%;
+  font-family: 'Luckiest Guy', cursive;
+  color: #000033;
+  font-size: 6cqw;
+
 }
 
-.toplogo {
+
+
+
+
+
+
+
+.size-contact {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 86%;
+}
+
+.contact-btn {
+  height: auto;
   width: 100%;
-  max-width: 300px;
-  min-width: 100px;
+  margin: 1%;
 }
 
-.socket-image {
+.buttons-row {
+  margin: 1%;
+  ;
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttons-row img {
+  height: auto;
+}
+
+.portfolio-btn {
+  flex: 1;
+}
+
+.demo-btn {
+  flex: 1;
+}
+
+.size-store {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 71%;
+}
+
+.store-btn {
+
+  height: auto;
   width: 100%;
-  max-width: 400px;
-  min-width: 150px;
-}
-
-.general-responsive {
-  width: 100%;
-  max-width: 400px;
-  min-width: 150px;
-}
-
-.general-responsive2 {
-  width: 100%;
-  max-width: 200px;
-  min-width: 75px;
-}
-
-.no-dots {
-  list-style-type: none;
-  padding-left: 0;
-  /* Optional: remove left indentation */
+  margin: 1%;
 }
 
 
 
 /* HERE DEBUGS */
-/* .dotlines,
+.dotlines,
 .dotlines * {
   border: 1px dashed rgb(255, 0, 0);
-} */
+}
 
 .bob {
-  animation: bobbing 2s cubic-bezier(.7, 0, 0, .7) infinite;
+  animation: bobbing 1.8s cubic-bezier(.7, 0, 0, .7) infinite;
   animation-direction: normal;
 
   display: inline-block;
@@ -59,48 +168,49 @@
   }
 
   50% {
-    transform: translatex(-20px);
+    transform: translatex(-10px);
   }
 }
 
 
 @keyframes sway {
   0% {
-    transform: rotate(-1deg);
+    transform: rotate(-0.5deg);
   }
 
   100% {
-    transform: rotate(1deg);
+    transform: rotate(0.5deg);
   }
 }
 
 .sway {
-  animation: sway 0.2s ease-in-out infinite;
+  animation: sway 1s ease-in-out infinite;
   animation-direction: alternate;
   display: inline-block;
   transform-origin: center;
 }
 
+/* Make html and body take full height */
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#000033, #000033);
+}
 
-@media (max-width: 767px) {
-  .image-row {
-    grid-template-columns: auto auto auto;
-    grid-gap: 5px;
-  }
+.clickable {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
 
+.clickable:hover {
+  transform: scale(1.03);
+  transition: transform 0.05s ease, color 0.05s ease;
+}
 
-
-}    /* Only 2 columns now */
-
-
-  @media (max-width: 400px) {
-  .image-row {
-    grid-template-columns: auto auto auto;
-    grid-gap: 1px;
-  }
-
-  /* Hide the middle item cleanly */
-  .socket-image {
-    display: none;
-  }
-} 
+/* Ensure child elements are layered above the background */
+.burger-menu>* {
+  position: relative;
+  z-index: 2;
+}
