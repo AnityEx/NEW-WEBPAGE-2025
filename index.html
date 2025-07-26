@@ -37,8 +37,8 @@
           <img src="menu_img/bt-logo.svg" alt="Description of image" />
         </div>
         <div class="size-top clickable">
-          <div class="top-btn">
-            <img src="menu_img/bt-top.svg" alt="Bottom image" class="bt-top" />
+          <div class="top-btn ">
+            <img src="menu_img/bt-top.svg" alt="Bottom image" class="bt-top " />
             <img src="menu_img/face-1.svg" alt="face overlay" class="face-overlay bob" />
             <img src="menu_img/socket-faceless.svg" alt="Socket overlay" class="socket-overlay " />
 
@@ -92,13 +92,37 @@
       <i class="bi bi-instagram"></i>
     </a>
     <a href="https://sketchfab.com/AnityEx" class="text-white mx-2" aria-label="Sketchfab" target="_blank" rel="noopener noreferrer"style="text-decoration: none;">
-      <i class="bi bi-box-seam"></i> <!-- Using box-seam as a generic 3D model icon -->
+      <i class="bi bi-box"></i> <!-- Using box-seam as a generic 3D model icon -->
     </a>
   </p>
 </footer>
 
   </div>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const phrases = [
+      "Do you like my hamburger menu?",
+      "ok this text changes when you click the button",
+      "i wish i had mobile version",
+      "i am not a web developer so this feature was made with chat haha",
+      "turns out web desing is fun and hard hahah",
+      "i love myself and my work",
+      "im great to work with i swear",
+    ];
+    let currentIndex = 0;
+
+    const textOverlay = document.querySelector(".text-overlay");
+    const topBtn = document.querySelector(".top-btn");
+
+    if (textOverlay && topBtn) {
+      topBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % phrases.length;
+        textOverlay.textContent = phrases[currentIndex];
+      });
+    }
+  });
+</script>
 </body>
 
 </html>

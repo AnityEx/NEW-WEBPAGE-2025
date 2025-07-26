@@ -4,7 +4,7 @@
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
-  width: 100vw;
+  width: 88vw;
   max-width: 600px;
   max-height: 100vh;
   margin: 0;
@@ -44,7 +44,7 @@
   position: relative;
   width: 100%;
   margin: 1%;
-      container-type: inline-size;
+  container-type: inline-size;
 }
 
 .bt-top {
@@ -61,6 +61,7 @@
   z-index: 2;
   /*   pointer-events: none; */
 }
+
 .face-overlay {
   position: absolute;
   top: 32%;
@@ -88,6 +89,7 @@
   font-family: 'Luckiest Guy', cursive;
   color: #000033;
   font-size: 6cqw;
+  line-height: 1;
 
 }
 
@@ -197,17 +199,28 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#000033, #000033);
+  background-image: radial-gradient(#000033e8 8%, #000033b7 100%), url('../menu_img/gridme.png');
+  background-repeat: repeat;
+  background-size: auto, 50px 50px;
 }
 
 .clickable {
-  transition: transform 0.3s ease, color 0.3s ease;
+  /* Transition all properties that will change */
+  transition: transform 0.1s ease, color 0.1s ease, filter 0.1s ease;
+  filter: drop-shadow(0px 0px 0px #ffffff); /* Start without shadow */
 }
 
 .clickable:hover {
-  transform: scale(1.03);
-  transition: transform 0.05s ease, color 0.05s ease;
+  transform: translateY(-6px);
+  filter: drop-shadow(0px 6px 0px #ffffff);
 }
+
+.clickable:active {
+  transform: translateY(0px);
+  filter: drop-shadow(0px 0px 0px #ffffff);
+}
+
+
 
 /* Ensure child elements are layered above the background */
 .burger-menu>* {
