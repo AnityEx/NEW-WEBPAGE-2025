@@ -1,6 +1,34 @@
+/* Make html and body take full height */
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(#000033e8 8%, #000033b7 100%), url('../menu_img/gridme.png');
+  background-repeat: repeat;
+  background-size: auto, 50px 50px;
+}
+
+.beforemain {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.maincustom {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* ----------------------------------------------------------------------- */
 .burger-menu {
   position: absolute;
-  /* Ensures it stays centered */
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
@@ -24,6 +52,7 @@
   background-repeat: no-repeat;
   width: 107%;
   height: 100%;
+
 }
 
 
@@ -31,12 +60,12 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  width: 55%;
+  width: 10%;
 }
 
 .logotop img {
   height: auto;
-  width: 20%;
+  width: auto;
   margin: 1%;
 }
 
@@ -45,6 +74,7 @@
   width: 100%;
   margin: 1%;
   container-type: inline-size;
+
 }
 
 .bt-top {
@@ -72,20 +102,29 @@
   /*   pointer-events: none; */
 }
 
+.touchhere-overlay {
+  position: absolute;
+  top: 80%;
+  left: 82%;
+  width: 16%;
+  height: 33%;
+  z-index: 4;
+  /*   pointer-events: none; */
+}
+
 .text-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -15%;
+  left: 0.5%;
+  width: 60%;
+  height: 90%;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
-
-  padding-left: 2%;
-  padding-right: 40%;
+  padding-left: 0%;
+  padding-right: 0%;
   font-family: 'Luckiest Guy', cursive;
   color: #000033;
   font-size: 6cqw;
@@ -110,12 +149,11 @@
 .contact-btn {
   height: auto;
   width: 100%;
-  margin: 1%;
+  margin-top: 1%;
 }
 
 .buttons-row {
   margin: 1%;
-  ;
   display: flex;
   justify-content: center;
 
@@ -144,7 +182,7 @@
 
   height: auto;
   width: 100%;
-  margin: 1%;
+  margin: 0%;
 }
 
 
@@ -155,10 +193,26 @@
   border: 1px dashed rgb(255, 0, 0);
 }
 
+.bob2 {
+  animation: bobbing2 1s cubic-bezier(.7, 0, 0, .7) infinite;
+  animation-direction: normal;
+  display: inline-block;
+}
+
+@keyframes bobbing2 {
+  0%, 100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+
+  50% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+}
+
+
 .bob {
   animation: bobbing 1.8s cubic-bezier(.7, 0, 0, .7) infinite;
   animation-direction: normal;
-
   display: inline-block;
 }
 
@@ -170,18 +224,18 @@
   }
 
   50% {
-    transform: translatex(-10px);
+    transform: translatex(-8px);
   }
 }
 
 
 @keyframes sway {
   0% {
-    transform: rotate(-0.5deg);
+    transform: rotate(-1deg);
   }
 
   100% {
-    transform: rotate(0.5deg);
+    transform: rotate(1deg);
   }
 }
 
@@ -192,22 +246,12 @@
   transform-origin: center;
 }
 
-/* Make html and body take full height */
-html,
-body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  background-image: radial-gradient(#000033e8 8%, #000033b7 100%), url('../menu_img/gridme.png');
-  background-repeat: repeat;
-  background-size: auto, 50px 50px;
-}
 
 .clickable {
   /* Transition all properties that will change */
   transition: transform 0.1s ease, color 0.1s ease, filter 0.1s ease;
-  filter: drop-shadow(0px 0px 0px #ffffff); /* Start without shadow */
+  filter: none;
+  /* Start without shadow */
 }
 
 .clickable:hover {
@@ -226,4 +270,54 @@ body {
 .burger-menu>* {
   position: relative;
   z-index: 2;
+}
+
+
+
+/* ----------------------------------------------------------------*/
+.custom-footer {
+  margin-top: auto;
+  background-color: #4F0241;
+  color: #ccc;
+  text-align: center;
+  padding: 13px;
+  font-size: 14px;
+}
+
+.custom-footer p {
+  margin: 0;
+}
+
+.custom-footer a {
+  color: #fff;
+  margin: 0 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease; /* Added color transition */
+}
+
+.custom-footer a:hover {
+  transform: translateY(-3px);
+  color: #FF9100; /* Change text color on hover */
+}
+
+
+.custom-footer i {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .custom-footer {
+    padding: 13px;
+  }
+
+  .custom-footer a {
+    margin: 0 20px;
+    /* Optional: reduce spacing between links */
+  }
+
+  .custom-footer i {
+    font-size: 24px;
+    /* Optional: slightly smaller icons on mobile */
+  }
 }

@@ -16,12 +16,14 @@ body {
 .bg-mdark {
     background-color: #a00e5780;
 }
+
 @media (max-width: 767px) {
     .sm-maxwidth {
-    width: 100px !important;
-    min-height:40px;
+        width: 100px !important;
+        min-height: 40px;
     }
 }
+
 .tp-mlight {
     color: #ffffff;
 }
@@ -34,23 +36,23 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .floatingnavigator {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1050; /* Higher than Bootstrap's base elements */
+    z-index: 1050;
+    /* Higher than Bootstrap's base elements */
     pointer-events: auto;
 }
 
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url('../images/newback.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: radial-gradient(#000033e8 8%, #000033b7 100%), url('../menu_img/gridme.png');
+    background-repeat: repeat;
+    background-size: auto, 50px 50px;
     height: 100vh;
     min-height: 100vh;
 }
