@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/main-menu.css">
 
   <!-- bootstrap icons and the base idk -->
-<!--   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!--   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -37,7 +37,7 @@
         <div class="size-top clickable">
           <div class="top-btn ">
             <img src="menu_img/bt-top.svg" alt="Bottom image" class="bt-top" />
-                        <img src="menu_img/tryme.svg" alt="touch overlay" class="touchhere-overlay bob2" />
+            <img src="menu_img/tryme.svg" alt="touch overlay" class="touchhere-overlay bob2" />
 
             <img src="menu_img/face-1.svg" alt="face overlay" class="face-overlay bob" />
             <img src="menu_img/socket-faceless.svg" alt="Socket overlay" class="socket-overlay " />
@@ -79,51 +79,52 @@
     </main>
 
     <!-- Footer -->
-<footer class="custom-footer">
-  <p>
-    <a href="https://www.youtube.com/@AnityEx/featured" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-youtube"></i>
-    </a>
-    <a href="https://x.com/AnityEx" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-twitter"></i>
-    </a>
-    <a href="https://www.instagram.com/anity.ex/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a href="https://sketchfab.com/AnityEx" aria-label="Sketchfab" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-box"></i>
-    </a>
-  </p>
-</footer>
+    <footer class="custom-footer">
+      <p>
+        <a href="https://www.youtube.com/@AnityEx/featured" aria-label="YouTube" target="_blank"
+          rel="noopener noreferrer">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://x.com/AnityEx" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/anity.ex/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://sketchfab.com/AnityEx" aria-label="Sketchfab" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-box"></i>
+        </a>
+      </p>
+    </footer>
 
 
   </div>
 
   <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const phrases = [
-      "Do you like my hamburger menu?",
-      "ok this text changes when you click the button",
-      "hire me for your next project!",
-      "i am not a web developer so this feature was made with some help haha",
-      "turns out web desing is fun and quite hard",
-      "i love myself and my work",
-      "im great to work with i swear",
-      "if you read this you are a true fan  (*you start spinning*)",
-    ];
-    let currentIndex = 0;
+    document.addEventListener("DOMContentLoaded", () => {
+      const phrases = [
+        "Do you like my hamburger menu?",
+        "ok this text changes when you click the button",
+        "hire me for your next project!",
+        "i am not a web developer so this feature was made with some help haha",
+        "turns out web desing is fun and quite hard",
+        "i love myself and my work",
+        "im great to work with i swear",
+        "if you read this you are a true fan  (*you start spinning*)",
+      ];
+      let currentIndex = 0;
 
-    const textOverlay = document.querySelector(".text-overlay");
-    const topBtn = document.querySelector(".top-btn");
+      const textOverlay = document.querySelector(".text-overlay");
+      const topBtn = document.querySelector(".top-btn");
 
-    if (textOverlay && topBtn) {
-      topBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % phrases.length;
-        textOverlay.textContent = phrases[currentIndex];
-      });
-    }
-  });
-</script>
+      if (textOverlay && topBtn) {
+        topBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % phrases.length;
+          textOverlay.textContent = phrases[currentIndex];
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

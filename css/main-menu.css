@@ -30,8 +30,8 @@ body {
 .burger-menu {
   position: absolute;
   left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -60%);
   width: 88vw;
   max-width: 600px;
   max-height: 100vh;
@@ -72,7 +72,8 @@ body {
 .top-btn {
   position: relative;
   width: 100%;
-  margin: 1%;
+  margin-bottom: 1%;
+  margin-top: 2%;
   container-type: inline-size;
 
 }
@@ -114,9 +115,9 @@ body {
 
 .text-overlay {
   position: absolute;
-  top: -15%;
-  left: 0.5%;
-  width: 60%;
+  top: -13%;
+  left: 3%;
+  width: 55%;
   height: 90%;
   z-index: 3;
   display: flex;
@@ -127,7 +128,7 @@ body {
   padding-right: 0%;
   font-family: 'Luckiest Guy', cursive;
   color: #000033;
-  font-size: 6cqw;
+  font-size: 5.7cqw;
   line-height: 1;
 
 }
@@ -149,11 +150,12 @@ body {
 .contact-btn {
   height: auto;
   width: 100%;
-  margin-top: 1%;
+  margin-top: 0.7%;
 }
 
 .buttons-row {
-  margin: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   display: flex;
   justify-content: center;
 
@@ -200,7 +202,9 @@ body {
 }
 
 @keyframes bobbing2 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0) rotate(-1deg);
   }
 
@@ -293,12 +297,14 @@ body {
   margin: 0 30px;
   text-decoration: none;
   display: inline-block;
-  transition: transform 0.2s ease, color 0.2s ease; /* Added color transition */
+  transition: transform 0.2s ease, color 0.2s ease;
+  /* Added color transition */
 }
 
 .custom-footer a:hover {
   transform: translateY(-3px);
-  color: #FF9100; /* Change text color on hover */
+  color: #FF9100;
+  /* Change text color on hover */
 }
 
 
@@ -307,6 +313,44 @@ body {
 }
 
 @media (max-width: 600px) {
+  .burger-menu {
+    position: absolute;
+    transform: translate(-50%, -60%);
+    width: 98vw;
+
+  }
+
+  .burger-menu::before {
+    width: 98%;
+
+  }
+  .size-contact {
+    width: 93%;
+  }
+
+  .contact-btn {
+    height: auto;
+    width: 100%;
+    margin-top: 1.5%;
+  }
+
+  .buttons-row {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+
+  }
+.size-store {
+  width: 77%;
+}
+
+.store-btn {
+  height: auto;
+  width: 100%;
+  margin: 0%;
+}
+
   .custom-footer {
     padding: 13px;
   }
