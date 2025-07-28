@@ -31,7 +31,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -55%);
   width: 88vw;
   max-width: 600px;
   max-height: 100vh;
@@ -57,10 +57,13 @@ body {
 
 
 .logotop {
+  position: relative;
+  transform: translate(0%, 10%);
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  width: 10%;
+  width: 8%;
+
 }
 
 .logotop img {
@@ -324,6 +327,7 @@ body {
     width: 98%;
 
   }
+
   .size-contact {
     width: 93%;
   }
@@ -341,15 +345,16 @@ body {
     justify-content: center;
 
   }
-.size-store {
-  width: 77%;
-}
 
-.store-btn {
-  height: auto;
-  width: 100%;
-  margin: 0%;
-}
+  .size-store {
+    width: 77%;
+  }
+
+  .store-btn {
+    height: auto;
+    width: 100%;
+    margin: 0%;
+  }
 
   .custom-footer {
     padding: 13px;
@@ -364,4 +369,42 @@ body {
     font-size: 24px;
     /* Optional: slightly smaller icons on mobile */
   }
+}
+
+@media (max-height: 800px) {
+
+  .burger-menu {
+
+    transform: translate(-50%, -55%);
+
+  }
+
+
+  .logotop {
+    position: relative;
+    transform: translate(0%, 11%);
+    width: 7%;
+  }
+
+
+  .contact-btn {
+    height: auto;
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .buttons-row {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .store-btn {
+    height: auto;
+    width: 100%;
+    margin: 0%;
+  }
+
 }
