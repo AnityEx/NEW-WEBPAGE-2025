@@ -4,63 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
-    <style>
-
-        .info-container {
-            display: flex; /* Ensure it is a flex container if needed for its children */
-            justify-content: center;
-            flex-direction: row; /* Arrange items in a row */
-            max-width: 700px; /* Maximum container width */
-            margin: 0 auto; /* Center horizontally */
-        }
-
-        .info-image {
-            padding: 20px;
-        }
-
-        .info-image img {
-            max-width: 200px; /* Make the logo smaller */
-        }
-
-        .info-text {
-            color: white;
-            text-align: justify; /* Align text to the left for desktop */
-        }
-        .info-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Change to 'center' if you prefer centered buttons */
-}
-        .info-buttons button{
-            display: inline-block;
-            margin: 4px 4px;
-            text-decoration: none;
-            width: 100%; /* Make buttons take full width */
-        }
-
-        
-        /* Media query for mobile view */
-        @media (max-width: 700px) {
-            .info-container {
-                flex-wrap: wrap; /* Stack items vertically */
-            }
-
-            .info-image,
-            .info-text {
-                flex: 1 1 100%; /* Take full width on small screens */
-            }
-
-            .info-text {
-                text-align: justify; /* Use justified text for mobile */
-            }
-
-            .info-buttons {
-                justify-content: center; /* Center buttons horizontally for mobile */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/info.css"> <!-- Link to the new CSS file -->
 </head>
 <body>
     <main>
@@ -90,46 +36,6 @@
 
     <!-- FAQ Section -->
     <section id="faq-section">
-        <style>
-
-            .faq-container {
-                color: white;
-                text-align: center;
-                margin: 50px auto;
-                max-width: 800px;
-            }
-
-            .faq-item {
-                background-color: #333;
-                color: white;
-                margin: 0 10px 8px 10px;
-                border-radius: 5px;
-                overflow: hidden;
-            }
-
-            .faq-item button {
-                width: 100%;
-                background: none;
-                border: none;
-                color: white;
-                text-align: left;
-                padding: 15px;
-                font-size: 16px;
-                cursor: pointer;
-            }
-
-            .faq-item button:hover {
-                background-color: #444;
-            }
-
-            .faq-content {
-                text-align: justify;
-                display: none;
-                padding: 15px;
-                background-color: #222;
-                color: white;
-            }
-        </style>
         <div class="faq-container" id="faq-container">
             <h2>Preguntas Frecuentes</h2>
             <p>Actualizado 4 de Agosto 2023</p>

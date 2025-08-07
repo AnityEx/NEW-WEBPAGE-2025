@@ -1,17 +1,10 @@
-# 3D Portfolio Website
-test to see if it redeployts
-This project is a basic portfolio website designed to showcase 3D works. It includes an HTML file for structure, a CSS file for styling, and a JavaScript file for interactivity.
+# AnityEx's Website
+
+This project is an awesome wwebpage where i test my new stuff
 
 ## Project Structure
 
-```
-3d-portfolio
-├── index.html       # Main HTML document
-├── style.css        # Styles for the website
-├── script.js        # JavaScript for interactivity
-├── images           # Folder for portfolio images
-└── README.md        # Project documentation
-```
+no idea just do it lets go
 
 ## Setup Instructions
 

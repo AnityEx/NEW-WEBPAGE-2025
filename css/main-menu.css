@@ -1,0 +1,410 @@
+/* Make html and body take full height */
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(#000033e8 8%, #000033b7 100%), url('../menu_img/gridme.png');
+  background-repeat: repeat;
+  background-size: auto, 50px 50px;
+}
+
+.beforemain {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.maincustom {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* ----------------------------------------------------------------------- */
+.burger-menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  width: 88vw;
+  max-width: 600px;
+  max-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.burger-menu::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  background-image: url('../menu_img/back.svg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 107%;
+  height: 100%;
+
+}
+
+
+.logotop {
+  position: relative;
+  transform: translate(0%, 10%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 8%;
+
+}
+
+.logotop img {
+  height: auto;
+  width: auto;
+  margin: 1%;
+}
+
+.top-btn {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 2%;
+  container-type: inline-size;
+
+}
+
+.bt-top {
+  width: 100%;
+  display: block;
+}
+
+.socket-overlay {
+  position: absolute;
+  top: 7%;
+  left: 58%;
+  width: 39%;
+  height: 110%;
+  z-index: 2;
+  /*   pointer-events: none; */
+}
+
+.face-overlay {
+  position: absolute;
+  top: 32%;
+  left: 77%;
+  width: 16%;
+  height: 33%;
+  z-index: 3;
+  /*   pointer-events: none; */
+}
+
+.touchhere-overlay {
+  position: absolute;
+  top: 80%;
+  left: 82%;
+  width: 16%;
+  height: 33%;
+  z-index: 4;
+  /*   pointer-events: none; */
+}
+
+.text-overlay {
+  position: absolute;
+  top: -13%;
+  left: 3%;
+  width: 55%;
+  height: 90%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  padding-left: 0%;
+  padding-right: 0%;
+  font-family: 'Luckiest Guy', cursive;
+  color: #000033;
+  font-size: 5.7cqw;
+  line-height: 1;
+
+}
+
+
+
+
+
+
+
+
+.size-contact {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 86%;
+}
+
+.contact-btn {
+  height: auto;
+  width: 100%;
+  margin-top: 0.7%;
+}
+
+.buttons-row {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.buttons-row img {
+  height: auto;
+}
+
+.portfolio-btn {
+  flex: 1;
+}
+
+.demo-btn {
+  flex: 1;
+}
+
+.size-store {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 71%;
+}
+
+.store-btn {
+
+  height: auto;
+  width: 100%;
+  margin: 0%;
+}
+
+
+
+/* HERE DEBUGS */
+.dotlines,
+.dotlines * {
+  border: 1px dashed rgb(255, 0, 0);
+}
+
+.bob2 {
+  animation: bobbing2 1s cubic-bezier(.7, 0, 0, .7) infinite;
+  animation-direction: normal;
+  display: inline-block;
+}
+
+@keyframes bobbing2 {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+
+  50% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+}
+
+
+.bob {
+  animation: bobbing 1.8s cubic-bezier(.7, 0, 0, .7) infinite;
+  animation-direction: normal;
+  display: inline-block;
+}
+
+@keyframes bobbing {
+
+  0%,
+  100% {
+    transform: translatex(0);
+  }
+
+  50% {
+    transform: translatex(-8px);
+  }
+}
+
+
+@keyframes sway {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+.sway {
+  animation: sway 1s ease-in-out infinite;
+  animation-direction: alternate;
+  display: inline-block;
+  transform-origin: center;
+}
+
+
+.clickable {
+  /* Transition all properties that will change */
+  transition: transform 0.1s ease, color 0.1s ease, filter 0.1s ease;
+  filter: none;
+  /* Start without shadow */
+}
+
+.clickable:hover {
+  transform: translateY(-6px);
+  filter: drop-shadow(0px 6px 0px #ffffff);
+}
+
+.clickable:active {
+  transform: translateY(0px);
+  filter: drop-shadow(0px 0px 0px #ffffff);
+}
+
+
+
+/* Ensure child elements are layered above the background */
+.burger-menu>* {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* ----------------------------------------------------------------*/
+.custom-footer {
+  margin-top: auto;
+  background-color: #4F0241;
+  color: #ccc;
+  text-align: center;
+  padding: 13px;
+  font-size: 14px;
+}
+
+.custom-footer p {
+  margin: 0;
+}
+
+.custom-footer a {
+  color: #fff;
+  margin: 0 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  /* Added color transition */
+}
+
+.custom-footer a:hover {
+  transform: translateY(-3px);
+  color: #FF9100;
+  /* Change text color on hover */
+}
+
+
+.custom-footer i {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .burger-menu {
+    position: absolute;
+    transform: translate(-50%, -60%);
+    width: 98vw;
+
+  }
+
+  .burger-menu::before {
+    width: 98%;
+
+  }
+
+  .size-contact {
+    width: 93%;
+  }
+
+  .contact-btn {
+    height: auto;
+    width: 100%;
+    margin-top: 1.5%;
+  }
+
+  .buttons-row {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .size-store {
+    width: 77%;
+  }
+
+  .store-btn {
+    height: auto;
+    width: 100%;
+    margin: 0%;
+  }
+
+  .custom-footer {
+    padding: 13px;
+  }
+
+  .custom-footer a {
+    margin: 0 20px;
+    /* Optional: reduce spacing between links */
+  }
+
+  .custom-footer i {
+    font-size: 24px;
+    /* Optional: slightly smaller icons on mobile */
+  }
+}
+
+@media (max-height: 800px) {
+
+  .burger-menu {
+
+    transform: translate(-50%, -55%);
+
+  }
+
+
+  .logotop {
+    position: relative;
+    transform: translate(0%, 11%);
+    width: 7%;
+  }
+
+
+  .contact-btn {
+    height: auto;
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .buttons-row {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .store-btn {
+    height: auto;
+    width: 100%;
+    margin: 0%;
+  }
+
+}

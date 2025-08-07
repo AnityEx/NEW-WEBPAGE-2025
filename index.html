@@ -1,164 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnityEx's Site</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- here is jsut the bases of this index -->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnityEx's Site</title>
 
+  <!-- the embeds for my css files -->
+  <!--   <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/main-menu.css">
 
-    <link rel="stylesheet" href="style.css">
+  <!-- bootstrap icons and the base idk -->
+  <!--   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
+
 </head>
 
 
-<body class="bodyindex">
-    <div class="main-container">
-        <div class="logo">
-            <!-- Replace with your logo image -->
-            <img src="images/Anitylogonew.png" alt="Logo" class="logo-image">
+<body>
+  <!-- Full LEAD section -->
+  <div class="beforemain">
+    <!-- Main content -->
+    <main class="maincustom">
+      <div class="burger-menu">
+        <div class="logotop clickable">
+          <img src="menu_img/bt-logo.svg" alt="anityex's logo" />
         </div>
-        <div class="content">
-            <div class="demo-button">
-              <img src="images/button22x.png" alt="reel" class="demo-button-image" onclick="window.location.href='https://www.youtube.com/watch?v=HJEjwbA36wo'">
-            </div>
-            <div class="socials">
-                <!-- Replace with your social icons -->
-                <a href="#" class="social-icon">
-                    <img src="images/gumroad.png" alt="G" class="social-icon-image" onclick="window.location.href='https://anityex.gumroad.com/';">
-                  </a>
-                  <a href="#" class="social-icon">
-                    <img src="images/youtube.png" alt="YT" class="social-icon-image" onclick="window.location.href='https://www.youtube.com/@anityex';">
-                  </a>
-                  <a href="#" class="social-icon">
-                    <img src="images/sketchfab.png" alt="3D" class="social-icon-image" onclick="window.location.href='https://sketchfab.com/anityex';">
-                  </a>
-                  <a href="#" class="social-icon">
-                    <img src="images/insta.png" alt="IG" class="social-icon-image" onclick="window.location.href='https://www.instagram.com/anity.ex/';">
-                  </a>
-                  <a href="#" class="social-icon">
-                    <img src="images/fiverr.png" alt="FB" class="social-icon-image" onclick="window.location.href='https://www.fiverr.com/anityex';">
-                  </a>
-                  
-            </div>
-            <div class="description">
-Diseñador Gráfico y Artista 3D
-            </div>
-            <hr class="separator">
-            
-            <div class="buttons">
-                <button class="portfolio-button" onclick="window.location.href='portfolio.html'">Portafolio</button>
-                <button class="info-button" onclick="window.location.href='info.html'">Info</button>
-                <button class="contact-button" onclick="window.location.href='contact.html'">Contacto</button>
-                <button class="blog-button" onclick="window.location.href='https://blog.anityex.com';">Blog</button>
-            </div>
+        <div class="size-top clickable">
+          <div class="top-btn ">
+            <img src="menu_img/bt-top.svg" alt="Bottom image" class="bt-top" />
+            <img src="menu_img/tryme.svg" alt="touch overlay" class="touchhere-overlay bob2" />
+
+            <img src="menu_img/face-1.svg" alt="face overlay" class="face-overlay bob" />
+            <img src="menu_img/socket-faceless.svg" alt="Socket overlay" class="socket-overlay " />
+
+            <p class="text-overlay">Do you like my
+              hamburger menu?
+
+            </p>
+
+          </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+
+        <div class="size-contact">
+          <a class="contact-btn clickable " href="contact.html" target="_blank" rel="noopener noreferrer">
+            <img src="menu_img/bt-contact.svg" alt="AnityEx's Contact" />
+          </a>
+        </div>
+
+
+        <div class="buttons-row">
+          <a class="portfolio-btn clickable" href="portfolio.html" target="_blank" rel="noopener noreferrer">
+            <img src="menu_img/bt-portfolio.svg" alt="AnityEx's Portfolio" />
+          </a>
+          <a class="demo-btn clickable" href="https://www.youtube.com/watch?v=HJEjwbA36wo" target="_blank">
+            <img src="menu_img/bt-demo.svg" alt="AnityEx's Demo Reel" />
+          </a>
+        </div>
 
 
 
+        <div class="size-store">
+          <a class="store-btn clickable" href="https://anityex.gumroad.com/" target="_blank" rel="noopener noreferrer">
+            <img src="menu_img/bt-store.svg" alt="Description of image" />
+          </a>
+        </div>
+      </div>
 
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-      kofiWidgetOverlay.draw('anityex', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Tip Me',
-        'floating-chat.donateButton.background-color': '#ffffff',
-        'floating-chat.donateButton.text-color': '#323842'
-      });
-    </script>
 
-<script class="faceicon">
-  window.addEventListener("DOMContentLoaded", () => {
-    // Create the image element
-    const image = document.createElement('img');
-    image.src = "images/face.png";  // Replace with your image URL
-    image.id = "bouncing-image";
-    image.style.position = "fixed";
-    image.style.zIndex = "9999";
-    image.style.width = "50px";  // Adjust image size
-    image.style.height = "auto";  // Adjust image size
-    document.body.appendChild(image);
+    </main>
 
-    // Create the audio element
-    const audio = new Audio("sounds/arcade.mp3"); // Replace with your sound file path
-    audio.volume = 0.6;
-    // Add click event listener to play the sound
-    image.addEventListener("click", () => {
-      audio.currentTime = 0;  // Reset the sound to the beginning
-      audio.play();
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <p>
+        <a href="https://www.youtube.com/@AnityEx/featured" aria-label="YouTube" target="_blank"
+          rel="noopener noreferrer">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://x.com/AnityEx" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/anity.ex/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://sketchfab.com/AnityEx" aria-label="Sketchfab" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-box"></i>
+        </a>
+      </p>
+    </footer>
+
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const phrases = [
+        "Do you like my hamburger menu?",
+        "ok this text changes when you click the button",
+        "hire me for your next project!",
+        "i am not a web developer so this feature was made with some help haha",
+        "turns out web desing is fun and quite hard",
+        "i love myself and my work",
+        "im great to work with i swear",
+        "if you read this you are a true fan  (*you start spinning*)",
+      ];
+      let currentIndex = 0;
+
+      const textOverlay = document.querySelector(".text-overlay");
+      const topBtn = document.querySelector(".top-btn");
+
+      if (textOverlay && topBtn) {
+        topBtn.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % phrases.length;
+          textOverlay.textContent = phrases[currentIndex];
+        });
+      }
     });
+  </script>
+</body>
 
-    // Set initial position and speed
-    let x = 100, y = 110;
-    let dx = 3, dy = 2;
-
-    function animate() {
-      const ww = window.innerWidth;
-      const wh = window.innerHeight;
-
-      // Update position
-      x += dx;
-      y += dy;
-
-      // Check for collisions with the viewport edges
-      if (x + image.offsetWidth >= ww || x <= 0) dx *= -1;
-      if (y + image.offsetHeight >= wh || y <= 0) dy *= -1;
-
-      // Apply new position to the image
-      image.style.left = x + "px";
-      image.style.top = y + "px";
-
-      // Repeat the animation
-      requestAnimationFrame(animate);
-    }
-
-    animate(); // Start the animation
-
-    // Add mouseover event to bounce the image in a random direction
-    image.addEventListener("mouseover", () => {
-      // Generate random directions for dx and dy
-      dx = (Math.random() * 4 + 2) * (Math.random() < 0.5 ? 1 : -1); // Random speed between 2 and 6
-      dy = (Math.random() * 4 + 2) * (Math.random() < 0.5 ? 1 : -1); // Random speed between 2 and 6
-    });
-  });
-</script>
-
-<style>
-@media (max-width: 768px) {
-    .main-container {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        text-align: center; /* Center text */
-        width: 100%; /* Make the container full-width */
-        height: 100vh; /* Make it take the full viewport height */
-        margin: 0; /* Remove any margin */
-    }
-
-    .content {
-        width: 100%; /* Adjust content width for smaller screens */
-    }
-/*     THIS IS THE ACTUAL LOGO ON MOBILE THINGY SIOZE
- */    .logo img {
-        max-width: 150px; /* Adjust logo size for mobile */
-        margin-bottom: 15px; /* Add spacing below the logo */
-        margin-top: 25px; /* Add spacing above the logo */
-    }
-    .buttons {
-        width: 100%; /* Make buttons container full-width */
-        gap: 10px; /* Add spacing between buttons */
-        margin-bottom: 70px;
-
-    }
-
-    .buttons button {
-        max-width: 300px; /* Limit button width */
-        width: 90%; /* Allow buttons to resize */
-    }
-}
-</style>
-
-  </body>
 </html>
