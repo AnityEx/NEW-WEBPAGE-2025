@@ -58,7 +58,7 @@ body {
 
 .logotop {
   position: relative;
-  transform: translate(0%, 10%);
+  transform: translate(0%, 0%);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -263,7 +263,14 @@ body {
 
 .clickable:hover {
   transform: translateY(-6px);
-  filter: drop-shadow(0px 6px 0px #ffffff);
+  transform: translateY(-6px);
+  filter:
+    /* original shadow */
+    drop-shadow(0 7px 0 #ffffff)
+    /* soft glow */
+    drop-shadow(-1.5px 0 0 #ffffff)
+    /* larger glow */
+    drop-shadow(1.5px 0 0px #ffffff);
 }
 
 .clickable:active {
@@ -283,7 +290,11 @@ body {
 
 /* ----------------------------------------------------------------*/
 .custom-footer {
-  margin-top: auto;
+  position: fixed; /* Ensure it stays fixed at the bottom */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Span the full width of the viewport */
+  margin-top: 0; /* Remove margin-top since it's fixed */
   background-color: #4F0241;
   color: #ccc;
   text-align: center;
@@ -301,15 +312,12 @@ body {
   text-decoration: none;
   display: inline-block;
   transition: transform 0.2s ease, color 0.2s ease;
-  /* Added color transition */
 }
 
 .custom-footer a:hover {
   transform: translateY(-3px);
   color: #FF9100;
-  /* Change text color on hover */
 }
-
 
 .custom-footer i {
   font-size: 30px;
