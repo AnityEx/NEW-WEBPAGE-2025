@@ -1,88 +1,68 @@
-/* Make html and body take full height */
+/* * {
+  outline: 1px solid red;
+} */
+
+
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-image: radial-gradient(#000033e8 8%, #000033b7 100%), url('../menu_img/gridme.png');
   background-repeat: repeat;
-  background-size: auto, 50px 50px;
+  background-size: auto, 3cqw 3cqw;
+  scroll-behavior: smooth;
 }
 
-.beforemain {
+.hero-section {
+  position: relative;
+  min-height: 100vh;
   display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 0 !important;
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: column;
-}
-
-.maincustom {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-/* ----------------------------------------------------------------------- */
-.burger-menu {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -55%);
-  width: 88vw;
-  max-width: 600px;
-  max-height: 100vh;
-  margin: 0;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-
 }
 
-.burger-menu::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-  background-image: url('../menu_img/back.svg');
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 107%;
-  height: 100%;
 
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(25vw, 40rem);
 }
 
+.burger-menu img:not(.bt-top, .socket-overlay, .face-overlay, .touchhere-overlay) {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 1.45%;
+}
+
+/* Ensure child elements are layered above the background */
+.burger-menu>* {
+  position: relative;
+  z-index: 2;
+}
 
 .logotop {
-  position: relative;
-  transform: translate(0%, 0%);
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 8%;
-
-}
-
-.logotop img {
+  margin-left: 0%;
   height: auto;
-  width: auto;
-  margin: 1%;
+  width: 10%;
+  margin-bottom: 1.5%;
 }
 
-.top-btn {
-  position: relative;
-  width: 100%;
-  margin-bottom: 1%;
-  margin-top: 2%;
+.bt-top-container {
+  width: 125%;
+  height: auto;
+  margin-left: 0%;
+  display: block;
   container-type: inline-size;
-
 }
 
 .bt-top {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -90,31 +70,26 @@ body {
   position: absolute;
   top: 7%;
   left: 58%;
-  width: 39%;
   height: 110%;
   z-index: 2;
-  /*   pointer-events: none; */
 }
 
 .face-overlay {
   position: absolute;
   top: 32%;
-  left: 77%;
-  width: 16%;
+  left: 78%;
   height: 33%;
   z-index: 3;
-  /*   pointer-events: none; */
 }
 
 .touchhere-overlay {
   position: absolute;
-  top: 80%;
-  left: 82%;
-  width: 16%;
-  height: 33%;
+  top: 73%;
+  left: 86%;
+  height: 38%;
   z-index: 4;
-  /*   pointer-events: none; */
 }
+
 
 .text-overlay {
   position: absolute;
@@ -132,71 +107,32 @@ body {
   font-family: 'Luckiest Guy', cursive;
   color: #000033;
   font-size: 5.7cqw;
-  line-height: 1;
-
+  text-align: center;
 }
 
 
-
-
-
-
-
-
-.size-contact {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 86%;
-}
 
 .contact-btn {
   height: auto;
-  width: 100%;
+  width: 108%;
   margin-top: 0.7%;
 }
 
 .buttons-row {
-  margin-top: 1%;
-  margin-bottom: 1%;
+  width: 122%;
   display: flex;
   justify-content: center;
-
-}
-
-.buttons-row img {
-  height: auto;
-}
-
-.portfolio-btn {
-  flex: 1;
-}
-
-.demo-btn {
-  flex: 1;
-}
-
-.size-store {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 71%;
 }
 
 .store-btn {
 
   height: auto;
-  width: 100%;
-  margin: 0%;
+  width: 88%;
 }
 
 
 
-/* HERE DEBUGS */
-.dotlines,
-.dotlines * {
-  border: 1px dashed rgb(255, 0, 0);
-}
+
 
 .bob2 {
   animation: bobbing2 1s cubic-bezier(.7, 0, 0, .7) infinite;
@@ -254,19 +190,19 @@ body {
 }
 
 
+
+
 .clickable {
   /* Transition all properties that will change */
   transition: transform 0.1s ease, color 0.1s ease, filter 0.1s ease;
   filter: none;
-  /* Start without shadow */
 }
 
 .clickable:hover {
-  transform: translateY(-6px);
-  transform: translateY(-6px);
+  transform: translateY(-0.4cqw);
+  transform: translateY(-0.4cqw);
   filter:
-    /* original shadow */
-    drop-shadow(0 5px 0 #ffffff) drop-shadow(0px 0px 5px #ff0077);
+    drop-shadow(0 0.4cqw 0 #ffffff) drop-shadow(0px -0.6cqw 0.4cqw #0000006e);
 }
 
 .clickable:active {
@@ -276,140 +212,73 @@ body {
 
 
 
-/* Ensure child elements are layered above the background */
-.burger-menu>* {
-  position: relative;
-  z-index: 2;
+
+/* ----------------------------------------------------------------*/
+
+.contact-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 48px 24px;
+  box-sizing: border-box;
 }
 
+.contact-section .container-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section .image-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-section .image-item button {
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ffffff;
+  font-size: 100%;
+}
+
+.SOCIALS {
+  background-color: #1da1f2;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6em 1.5em;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  font-size: 1rem;
+}
+
+.SOCIALS:hover {
+  background-color: #0d8ddb;
+  transform: translateY(-1px);
+}
+
+.SOCIALS:active {
+  background-color: #0b7ac9;
+  transform: translateY(0);
+}
 
 
 /* ----------------------------------------------------------------*/
-.custom-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  /* Span the full width of the viewport */
-  margin-top: 0;
-  background-color: #4F0241;
-  color: #ccc;
-  text-align: center;
-  padding: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 14px;
-}
-
-.custom-footer p {
-  margin: 0;
-}
-
-.custom-footer a {
-  color: #fff;
-  margin: 0 30px;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.custom-footer a:hover {
-  transform: translateY(-3px);
-  color: #FF9100;
-}
-
-.custom-footer i {
-  font-size: 30px;
-}
-
-@media (max-width: 600px) {
+/* Responsive adjustments */
+@media (max-width: 712px) {
   .burger-menu {
-    position: absolute;
-    transform: translate(-50%, -60%);
-    width: 98vw;
-
-  }
-
-  .burger-menu::before {
-    width: 98%;
-
-  }
-
-  .size-contact {
-    width: 93%;
-  }
-
-  .contact-btn {
-    height: auto;
-    width: 100%;
-    margin-top: 1.5%;
-  }
-
-  .buttons-row {
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    width: min(75vw, 40rem);
   }
-
-  .size-store {
-    width: 77%;
-  }
-
-  .store-btn {
-    height: auto;
-    width: 100%;
-    margin: 0%;
-  }
-
-
-
-  .custom-footer a {
-    margin: 0 14px;
-    /* Optional: reduce spacing between links */
-  }
-
-  .custom-footer i {
-    font-size: 24px;
-    /* Optional: slightly smaller icons on mobile */
-  }
-}
-
-@media (max-height: 800px) {
-
-  .burger-menu {
-
-    transform: translate(-50%, -55%);
-
-  }
-
-
-  .logotop {
-    position: relative;
-    transform: translate(0%, 11%);
-    width: 7%;
-  }
-
-
-  .contact-btn {
-    height: auto;
-    width: 100%;
-    margin-top: 1%;
-  }
-
-  .buttons-row {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .store-btn {
-    height: auto;
-    width: 100%;
-    margin: 0%;
-  }
-
 }
