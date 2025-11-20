@@ -10,21 +10,23 @@
 
 html,
 body {
-    overflow-x: hidden;
-    min-height: 100dvh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  scroll-behavior: smooth;
 
-    /* Layer order: top -> bottom */
-    background-image: 
-        radial-gradient(#000033e8 8%, #000033b7 100%),  
-        url('../images/newback.webp'),             
-        url('../menu_img/gridme.png');          
+  overflow-x: hidden;
+  min-height: 100dvh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
-    background-repeat: no-repeat, no-repeat, repeat;
-    background-size: auto, cover, 50px 50px;
-    background-attachment: scroll, fixed, scroll;
+  /* Layer order: top -> bottom */
+  background-image:
+    radial-gradient(#000033e8 8%, #000033b7 100%),
+    url('../images/newback.webp'),
+    url('../menu_img/gridme.png');
+
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: auto, cover, 50px 50px;
+  background-attachment: scroll, fixed, scroll;
 }
 
 
@@ -38,6 +40,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
 }
+
 .burger-menu {
   position: relative;
   display: flex;
@@ -299,16 +302,19 @@ h2 {
 }
 
 .SOCIALS {
-  background-color: #00bfa5; /* cyan-green */
-  color: #fff;
-  font-weight: 600;
-  padding: 0.5em 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+  font-size: 120% !important;
+  background-color: #00bfa5;
+  padding: 1em 5vw;
   border: none;
-  border-radius: 12px; /* rounded corners but not a full pill */
+  border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
   font-size: 1rem;
-  margin: 0.2em; /* small gap between buttons */
+  margin: 0.2em;
+  /* small gap between buttons */
 }
 
 .SOCIALS:hover {
@@ -350,9 +356,6 @@ h2 {
       transform: translateY(0px);
       filter: drop-shadow(0px 0px 0px #ffffff);
     }
-
-
-
 
 
   }
