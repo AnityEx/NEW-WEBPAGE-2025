@@ -21,7 +21,6 @@
 
       <div class="clickable bt-top-container">
         <img src="menu_img/bt-top.webp" alt="Bottom image" class="bt-top" />
-        <img src="menu_img/bt-logo.webp" alt="anityex's logo" class="logotop" />
         <img src="menu_img/tryme.webp" alt="touch overlay" class="touchhere-overlay bob2" />
         <img src="menu_img/face-1.webp" alt="face overlay" class="face-overlay bob" />
         <img src="menu_img/socket-faceless.webp" alt="Socket overlay" class="socket-overlay" />
@@ -68,7 +67,8 @@
             <button class="SOCIALS clickable" onclick="window.location.href='https://www.instagram.com/anity.ex/'">
               Instagram chat
             </button>
-            <button class="SOCIALS clickable"  style="background-color: darkorange;" onclick="window.location.href='mailto:anityex@gmail.com'">
+            <button class="SOCIALS clickable" style="background-color: darkorange;"
+              onclick="window.location.href='mailto:anityex@gmail.com'">
               Business Email
             </button>
           </div>
@@ -81,46 +81,7 @@
 
 
 
-
-
-
-
-
-
-
-
-  <script>
-    function initTextPhrases() {
-      const phrases = [
-        "Do you like my hamburger menu?",
-        "ok this text changes when you click the button",
-        "hire me for your next project!",
-        "i am not a web developer so this feature was made with some help haha",
-        "turns out web desing is fun and quite hard",
-        "i love myself and my work",
-        "im passionate about my craft",
-        "if you read this you are a true fan (*you start spinning*)",
-        "galery in the works (v‿v)",
-      ];
-      let currentIndex = 0;
-
-      const textOverlay = document.querySelector(".text-overlay");
-      const topBtn = document.querySelector(".bt-top-container");
-
-      if (textOverlay && topBtn) {
-        topBtn.addEventListener("click", () => {
-          currentIndex = (currentIndex + 1) % phrases.length;
-          textOverlay.textContent = phrases[currentIndex];
-        });
-      }
-    }
-
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initTextPhrases);
-    } else {
-      initTextPhrases();
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 

@@ -20,13 +20,14 @@ body {
 
   /* Layer order: top -> bottom */
   background-image:
-    radial-gradient(#000033e8 8%, #000033b7 100%),
+    linear-gradient(to right, #000033b7 0%, #5100589f 50%, #000033b7 100%),
     url('../images/newback.webp'),
     url('../menu_img/gridme.png');
 
   background-repeat: no-repeat, no-repeat, repeat;
-  background-size: auto, cover, 50px 50px;
+  background-position: left top, left top, top left;
   background-attachment: scroll, fixed, scroll;
+  background-size: auto, cover, 50px 50px;
 }
 
 
@@ -60,10 +61,26 @@ body {
   width: 140%;
   height: 140%;
   transform: translate(-50%, -50%);
-  background-image: url('../menu_img/back.webp');
+
+  /* Background images */
+  background-image: url('../menu_img/back.webp'), url('../menu_img/bt-logo.webp');
+
+  /* Keep first image exactly as before */
   background-repeat: no-repeat;
+  /* applies to all by default */
   background-position: center;
+  /* first image stays centered */
   background-size: contain;
+  /* first image stays contain */
+
+  /* Override only the second image */
+  background-repeat: no-repeat, no-repeat;
+  /* ensure both no-repeat */
+  background-position: center, center 5%;
+  /* second image horizontally centered, 10% from top */
+  background-size: contain, 7% auto;
+  /* second image shrinks to 8% width */
+
   z-index: 0;
   pointer-events: none;
 }
@@ -99,13 +116,15 @@ body {
   display: block;
 }
 
+/* 
+<img src="menu_img/bt-logo.webp" alt="anityex's logo" class="logotop" />
 .logotop {
   position: absolute;
   top: -47%;
   left: 45%;
   z-index: 3;
   width: 8% !important;
-}
+} */
 
 
 .socket-overlay {
@@ -143,7 +162,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  cursor: default;
+  user-select: none;
+  
   padding-left: 0%;
   padding-right: 0%;
   font-family: 'Luckiest Guy', cursive;
@@ -329,7 +350,8 @@ h2 {
 
 /* ----------------------------------------------------------------*/
 /* Responsive adjustments */
-@media (max-width: 712px) {
+@media (max-width: 712px) and (max-aspect-ratio: 6/7) {
+
   .burger-menu {
     display: flex;
     flex-direction: column;
