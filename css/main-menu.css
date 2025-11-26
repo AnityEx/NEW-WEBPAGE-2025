@@ -164,7 +164,7 @@ body {
   justify-content: center;
   cursor: default;
   user-select: none;
-  
+
   padding-left: 0%;
   padding-right: 0%;
   font-family: 'Luckiest Guy', cursive;
@@ -287,15 +287,25 @@ body {
 
 
 /* ----------------------------------------------------------------*/
+/* dev border */
+/* .contact-section * {
+  outline: 1px solid red;
+} */
+
+/* ----------------------------------------------------------------*/
 
 .contact-section {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #ffffff;
   padding: 48px 24px;
   box-sizing: border-box;
+}
+
+.contact-section .centerimage {
+  max-width: 100%;
+  height: auto;
+  max-height: 30dvh;
+  margin-bottom: 0.5dvh;
 }
 
 .contact-section .container-inner {
@@ -304,17 +314,38 @@ body {
   text-align: center;
 }
 
-.contact-section .image-item img {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
-  display: block;
-  margin: 0 auto;
+.contact-section .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.contact-section .image-item button {
-  margin-top: 20px;
+.contact-section .image-container img {
+  max-width: 100%;
+  height: 15dvh;
+  max-height: 30vh;
 }
+
+.contact-section .buttons-container .div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* centers horizontally */
+
+
+  margin-bottom: 20px;
+}
+
+.contact-section .buttons-container .div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
 
 h2 {
   font-family: 'Luckiest Guy', cursive;
@@ -323,27 +354,51 @@ h2 {
 }
 
 .SOCIALS {
+  white-space: nowrap;
+  display: inline-block;
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   color: #ffffff;
   font-size: 120% !important;
-  background-color: #00bfa5;
-  padding: 1em 5vw;
+
+  background-color: #ffae00;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
   font-size: 1rem;
-  margin: 0.2em;
-  /* small gap between buttons */
+  padding: 1em 5vw;
+  margin: 0.5em;
+  text-decoration: none;
 }
 
-.SOCIALS:hover {
+.SOCIALS2 {
+  white-space: nowrap;
+  display: inline-block;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+  font-size: 120% !important;
+
+  background-color: #00bfa5;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  font-size: 1rem;
+  padding: 0.5em 5vw;
+  margin: 0.5em;
+  text-decoration: none;
+}
+
+.SOCIALS .SOCIALS2:hover {
   background-color: #00a18c;
   transform: translateY(-1px);
 }
 
-.SOCIALS:active {
+.SOCIALS .SOCIALS2:active {
   background-color: #008f7b;
   transform: translateY(0);
 }
