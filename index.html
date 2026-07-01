@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="Assets/images/favicon.png" type="image/x-icon" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnityEx's Headquarters</title>
-  <link rel="stylesheet" href="css/main-menu.css">
+  <link rel="stylesheet" href="source/css/main-menu.css">
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800&display=swap" rel="stylesheet">
 </head>
 
 
@@ -20,28 +21,28 @@
 
 
       <div class="clickable bt-top-container">
-        <img src="menu_img/bt-top.webp" alt="Bottom image" class="bt-top" />
-        <img src="menu_img/tryme.webp" alt="touch overlay" class="touchhere-overlay bob2" />
-        <img src="menu_img/face-1.webp" alt="face overlay" class="face-overlay bob" />
-        <img src="menu_img/socket-faceless.webp" alt="Socket overlay" class="socket-overlay" />
+        <img src="assets/menu_img/bt-top.webp" alt="Bottom image" class="bt-top" />
+        <img src="assets/menu_img/tryme.webp" alt="touch overlay" class="touchhere-overlay bob2" />
+        <img src="assets/menu_img/face-1.webp" alt="face overlay" class="face-overlay bob" />
+        <img src="assets/menu_img/socket-faceless.webp" alt="Socket overlay" class="socket-overlay" />
         <p class="text-overlay">Welcome to my headquarters, click or scroll!</p>
       </div>
 
       <a class="contact-btn clickable" href="#section2" rel="noopener noreferrer">
-        <img src="menu_img/bt-contact.webp" alt="AnityEx's Contact" />
+        <img src="assets/menu_img/bt-contact.webp" alt="AnityEx's Contact" />
       </a>
 
       <div class="buttons-row">
-        <a class="portfolio-btn clickable" href="portfolio.html" target="_blank" rel="noopener noreferrer">
-          <img src="menu_img/bt-portfolio.webp" alt="AnityEx's Portfolio" />
+        <a class="portfolio-btn clickable" href="pages/portfolio.html" target="_blank" rel="noopener noreferrer">
+          <img src="assets/menu_img/bt-portfolio.webp" alt="AnityEx's Portfolio" />
         </a>
         <a class="demo-btn clickable" href="https://www.youtube.com/watch?v=HJEjwbA36wo" target="_blank">
-          <img src="menu_img/bt-demo.webp" alt="AnityEx's Demo Reel" />
+          <img src="assets/menu_img/bt-demo.webp" alt="AnityEx's Demo Reel" />
         </a>
       </div>
 
       <a class="store-btn clickable" href="https://anityex.gumroad.com/" target="_blank" rel="noopener noreferrer">
-        <img src="menu_img/bt-store.webp" alt="Store button" />
+        <img src="assets/menu_img/bt-store.webp" alt="Store button" />
       </a>
 
 
@@ -67,7 +68,7 @@
 
 
 
-  <!-- New section -->
+  <!--            section 2                 -->
 
   <section id="section2" class="contact-section">
     <div class="container-inner">
@@ -78,7 +79,7 @@
 
         </div>
 
-        <img class="centerimage" src="images/messages.webp" alt="Contact illustration">
+        <img class="centerimage" src="assets/images/messages.webp" alt="Contact illustration">
         <div>
 
         </div>
@@ -87,7 +88,7 @@
         <div class="buttons-container">
 
           <div class="div1">
-            <img src="Section2/email.webp" alt="">
+            <img src="assets/main_section2/email.webp" alt="">
 
             <div class="div2">
               <a href="mailto:anityex@gmail.com" class="SOCIALS clickable">Business Email</a>
@@ -97,7 +98,7 @@
 
 
           <div class="div1">
-            <img src="Section2/chat.webp" alt="">
+            <img src="assets/main_section2/chat.webp" alt="">
 
             <div class="div2">
               <a href="https://bsky.app/profile/me.anityex.com" class="SOCIALS2 clickable">Bluesky chat</a>
@@ -126,7 +127,6 @@
               Reel</a></li>
           <li><a href="https://anityex.gumroad.com/" target="_blank" rel="noopener noreferrer">Gumroad Store</a></li>
           <li><a href="https://ko-fi.com/anityex" target="_blank" rel="noopener noreferrer">Ko-fi donations</a></li>
-
         </ul>
       </div>
 
@@ -146,17 +146,16 @@
       </div>
   </section>
 
-  <a href="https://ko-fi.com/V7V11ASJ1" target="_blank" style="
-    position:fixed;
-    left:0;
-    bottom:0;
-    margin:5px;
-  ">
-    <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" height="36" alt="Buy Me a Coffee at ko-fi.com"
-      style="border:none;">
-  </a>
-
-  <script src="script.js"></script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('anityex', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#ffffff',
+      'floating-chat.donateButton.text-color': '#323842'
+    });
+  </script>
+  <script src="source/script.js"></script>
 
 </body>
 

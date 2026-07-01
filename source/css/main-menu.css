@@ -21,8 +21,8 @@ body {
   /* Layer order: top -> bottom */
   background-image:
     linear-gradient(to right, #000033b7 0%, #5100589f 50%, #000033b7 100%),
-    url('../images/newback.webp'),
-    url('../menu_img/gridme.png');
+    url('../../assets/images/newback.webp'),
+    url('../../assets/menu_img/gridme.png');
 
   background-repeat: no-repeat, no-repeat, repeat;
   background-position: left top, left top, top left;
@@ -63,7 +63,7 @@ body {
   transform: translate(-50%, -50%);
 
   /* Background images */
-  background-image: url('../menu_img/back.webp'), url('../menu_img/bt-logo.webp');
+  background-image: url('../../assets/menu_img/back.webp'), url('../../assets/menu_img/bt-logo.webp');
 
   /* Keep first image exactly as before */
   background-repeat: no-repeat;
@@ -350,13 +350,18 @@ body {
 
 /* … el resto de tus estilos … */
 
+/*font cabinet*/
+.div2 a {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .buttons-container .div2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* incluido */
   width: 100%;
   box-sizing: border-box;
 }
@@ -390,7 +395,8 @@ h2 {
 
   background-color: #ffae00;
   border: none;
-  border-radius: 12px;
+  border-radius: 25px;
+  corner-shape: squircle;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
   font-size: 1rem;
@@ -410,7 +416,8 @@ h2 {
 
   background-color: #00bfa5;
   border: none;
-  border-radius: 12px;
+  border-radius: 20px;
+  corner-shape: squircle;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
   font-size: 1rem;
